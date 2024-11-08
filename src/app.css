@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+    .small-toast {
+        max-width: 90%;
+        right: 3%;        
+        left: auto;     
+        margin-left: auto;
+        top: 20px;     
+        
+    }
+  }

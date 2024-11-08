@@ -4,6 +4,7 @@ import { toast  } from "react-toastify";
 import { Error } from "./Error";
 import { DraftPatient } from "../interface/type";
 import { usePatientStore } from "../store/store";
+import '../app.css';
 export const Form = () => {
     //se puede usar culaquier de las dos sintaxis
     //const {addPatient}= usePatientStore()
@@ -35,11 +36,11 @@ export const Form = () => {
   const formdatos = (data: DraftPatient) => {
     if(patientsId){
       updatePatient(data)
-      toast.success('Paciente Actualizado Correctamente')
+      toast.success('Paciente Actualizado Correctamente', { className: 'small-toast' })
 
     }else{
       addPatient(data);
-      toast.success('Paciente Registrado Correctmente')
+      toast.success('Paciente Registrado Correctmente', {className: 'small-toast' })
 
     }
     reset();

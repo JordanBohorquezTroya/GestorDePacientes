@@ -11,7 +11,7 @@ export const PatientDetails = ({patient}:PatientDetailsProps) => {
 
     const handleDelete = () =>{
         deletePatient(patient.id)
-        toast.error('Paciente Eliminado')
+        toast.error('Paciente Eliminado', {className: 'small-toast'} )
     }
 
   return (
@@ -23,7 +23,7 @@ export const PatientDetails = ({patient}:PatientDetailsProps) => {
         <PatientItemDetails labels="Fecha Alta" data={patient.date.toString()} />
         <PatientItemDetails labels="Síntomas" data={patient.symptoms} />
 
-        <div className="flex flex-col lg:flex-row gap-3 justify-between gap-3 mt-10">
+        <div className="flex flex-col lg:flex-row gap-3 justify-between mt-10">
             <button 
             onClick={()=>editarPatient(patient.id)}
             type="button"
