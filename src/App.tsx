@@ -1,5 +1,7 @@
+import { ToastContainer } from 'react-toastify'
 import { Form } from "./components/Form"
 import { List } from "./components/List"
+import 'react-toastify/dist/ReactToastify.css'
 
 
 function App() {
@@ -13,12 +15,12 @@ function App() {
       </h1>
     </div>
 
-    <div className="mt-12 md:flex">
+    <div className="mt-12 md:flex justify-center">
       <Form/>
       <List/>
 
     </div>
-      
+      <ToastContainer/>
     </>
   )
 }
