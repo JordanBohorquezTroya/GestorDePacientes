@@ -39,7 +39,7 @@ export const Form = () => {
 
     }else{
       addPatient(data);
-      toast.success('Paciente Regitrado Correctmente')
+      toast.success('Paciente Registrado Correctmente')
 
     }
     reset();
